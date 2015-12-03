@@ -4,7 +4,7 @@
   "description": "QML language support for Visual Studio Code",
   "version": "0.0.1",
   "publisher": "bbenoist",
-  "icon": "./icon.png",
+  "icon": "icon.png",
   "galleryBanner": {
     "color": "#FFFFFF",
     "theme": "light"
