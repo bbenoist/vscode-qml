@@ -1,0 +1,35 @@
+{
+  "name": "QML",
+  "displayName": "QML",
+  "description": "QML language support for Visual Studio Code",
+  "version": "0.0.1",
+  "publisher": "bbenoist",
+  "icon": "./icon.png",
+  "galleryBanner": {
+    "color": "#FFFFFF",
+    "theme": "light"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": { "url": "https://github.com/bbenoist/vscode-qml/issues" },
+  "homepage": "https://github.com/bbenoist/vscode-qml/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbenoist/vscode-qml.git"
+  },
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [ "Languages" ],
+  "contributes": {
+    "languages": [{
+      "id": "qml",
+      "extensions": [".qml",".qmlproject"],
+      "configuration": "./qml.configuration.json"
+    }],
+    "grammars": [{
+      "language": "qml",
+      "scopeName": "source.qml",
+      "path": "./syntaxes/qml.tmLanguage"
+    }]
+  }
+}
