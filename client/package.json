@@ -9,7 +9,7 @@
     "color": "#FFFFFF",
     "theme": "light"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "bugs": { "url": "https://github.com/bbenoist/vscode-qml/issues" },
   "homepage": "https://github.com/bbenoist/vscode-qml/blob/master/README.md",
   "repository": {
@@ -19,7 +19,11 @@
   "engines": {
     "vscode": "^0.10.1"
   },
-  "categories": [ "Languages" ],
+  "categories": [ "Languages", "Linters" ],
+  "activationEvents": [
+    "onLanguage:qml"
+  ],
+  "main": "./out/src/extension",
   "contributes": {
     "languages": [{
       "id": "qml",
@@ -31,5 +35,16 @@
       "scopeName": "source.qml",
       "path": "./syntaxes/qml.tmLanguage"
     }]
+  },
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^1.6.2",
+    "vscode": "0.10.x"
+  },
+  "dependencies": {
+    "vscode-languageclient": "0.10.x"
   }
 }

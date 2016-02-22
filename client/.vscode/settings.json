@@ -1,0 +1,11 @@
+// Overwrite default and user settings.
+{
+  "files.exclude": {
+    "out": false
+  },
+  "search.exclude": {
+    "out": true
+  },
+  // Use the TS server from node_modules folder to control its version.
+  "typescript.tsdk": "./node_modules/typescript/lib"
+}
