@@ -305,8 +305,20 @@
       <string>variable.parameter</string>
     </dict>
     <dict>
-      <key>include</key>
-      <string>source.js</string>
+      <key>comment</key>
+      <string>Double quoted strings</string>
+      <key>match</key>
+      <string>"([^"\\]*(\\.[^"\\]*)*)"|\'([^\'\\]*(\\.[^\'\\]*)*)\'</string>
+      <key>name</key>
+      <string>string.quoted.double.qml</string>
+    </dict>
+    <dict>
+      <key>comment</key>
+      <string>Poor man's implementation of number literals</string>
+      <key>match</key>
+      <string>\d*\.?\d+</string>
+      <key>name</key>
+      <string>constant.numeric.decimal.qml</string>
     </dict>
   </array>
   <key>scopeName</key>
